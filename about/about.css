@@ -65,13 +65,31 @@ nav a{
     padding-left: 30px;
 }
 
-.about_image{
-    width: 200px;
-    height: 200px;
+.about_para h1{
+    font-size: 100px
 }
 
-.abt_img{
-    width: auto; 
- max-height: 100%; 
+.about_para h3 {
+    padding-top: 20px;
+  font:serif;
+  line-height: 1.4;
+}
+.about_image{
+    /*width:350px;*/
+    /*height: 350px;*/
+    /*border: 5px solid white;*/
+    /*margin-top: 30px;*/
+    /*margin-left: 80px;*/
+    /* object-fit: contain;*/
+   
+}
+
+.about_image img{
+    width:400px;
+    height: 225px;
+    border: 5px solid white;
+    margin-top: 30px;
+    margin-left: 80px;
+     /*object-fit: contain;*/
 }  
 
