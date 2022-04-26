@@ -9,12 +9,8 @@
 nav{
     height: 100px;
     width: 100%;
-<<<<<<< HEAD
     background-color: white;
     border: 5px solid black;
-=======
-    background-color: #9EBEC6;
->>>>>>> d7e969592d9f812896d86e0bf2089f7e8ce62d75
 }
 lable.logo{
     font-size: 20px;
@@ -82,15 +78,9 @@ nav a{
     padding: 3px;
 }
 
-<<<<<<< HEAD
 .about-item{
     margin-bottom: 20px;
     margin-top: 20px;
-=======
-.about_para h3 {
-    position: relative;
-    top: 20px;
->>>>>>> d7e969592d9f812896d86e0bf2089f7e8ce62d75
     padding-top: 20px;
     background-color: white;
     padding: 80px, 30px;
