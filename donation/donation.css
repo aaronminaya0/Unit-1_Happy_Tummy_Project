@@ -107,10 +107,24 @@ a:hover {
     margin-right: 10%;
 }
 
+#phone {
+    background-image: url(img/phone.PNG);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    text-indent: 30px;
+}
+
 .e {
     grid-area: e;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+#email {
+    background-image: url(img/mail.PNG);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    text-indent: 30px;
 }
 
 .f {
@@ -119,10 +133,24 @@ a:hover {
     margin-right: 5%;
 }
 
+#donate {
+    background-image: url(img/money.PNG);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    text-indent: 30px;
+}
+
 .g {
     grid-area: g;
     margin-left: 5%;
     margin-right: 5%;
+}
+
+#card {
+    background-image: url(img/card.PNG);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    text-indent: 30px;
 }
 
 .h {
@@ -131,10 +159,33 @@ a:hover {
     margin-right: 5%;
 }
 
+#billing {
+    background-image: url(img/mailbox.PNG);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    text-indent: 30px;
+}
+
 .i {
     grid-area: i;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.footer {
+    background-color: #FBC4AB;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.footer ul {
+    display: flex;
+}
+
+.footer ul li {
+    padding: 15px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -155,6 +206,9 @@ a:hover {
         "j";
     }
 
-
+    .container section {
+        margin-left: 15px;
+        margin-right: 15px
+    }
 
 }
