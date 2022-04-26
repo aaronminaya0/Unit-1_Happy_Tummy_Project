@@ -1,219 +1,41 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-    list-style: none;
-}
-
-nav{
-    height: 80px;
-    width: 100%;
-    background-color: #9EBEC6;
-}
-lable.logo{
-    font-size: 20px;
-    /*line-height: 80px;*/
-    /*padding: 0 100px;*/
-}
-nav ul{
-    float: right;
-    margin-right: 40px;
-}
-nav li{
-    display: inline-block;
-    margin: 0 15px;
-    text-transform: capitalize;
-    margin-top: 30px;
-}
-nav a{
-    color: black;
-    border: solid transparent;
-    padding: 5px;
-}
-.active,a:hover{
-    border: 1px solid white;
-    transition: .5s;
-}
-
-#logo_img{
-    width:100px;
-    height: auto;
-}
-
-.name{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top:0;
-    padding-left: 120px;
+body {
+    background-image: url("calendar-backround.jpg");
     
 }
-
-body{
-    background-image: url("calendar-backround.jpg");
-    /*background-color: teal;*/
+.card:hover {
+    box-shadow: 12px 12px 2px 1px rgba(21, 97, 239, 0.86);
 }
 
-.title-section{
-    width:100%;
-    height: 100px;
-    background-color: white;
+.calendar-body{
+    margin-top: 4rem;
+    /*padding-left: 20rem;*/
+    margin:0 auto;
+}
+
+.cal-container img{
+    padding-left: 20px;
+    width:200px;
+    height: 200px;
+}
+
+.card {
+    margin: 0 auto;
+    width: 18rem;
+    margin-bottom: 2rem;
+    background-color: #000;
+     color: #fff;
+    opacity: .9;
+}
+
+.calendarBody {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+.title{
     text-align: center;
 }
 
-.title-section h1{
-    padding-top: 30px;
-}
-
-.left-section{
-    width: 200px;
-    height: 450px;
-    padding-right: 200px;
-}
-.left-section h1{
-    padding-left: 30px;
-    font-size: 70px;
-}
-
-.left-section h3{
-    padding-left: 30px;
-    font-size: 40px;
-  
-}
-.food-planner{
-    display:flex;
-
-}
-
-.calender{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    display: grid;
-    grid-template-columns: repeat(4, 200px);
-    grid-template-rows:repeat(3,300px);
-    border: 1px solid black;
-    grid-gap: 40px;
-    grid-template-areas:
-        "jan feb mar apr"
-        "may jun jul aug"
-        "sep oct nov dec";
-}
-
-#january{
-    grid-area: jan;
-    border:1px solid black;
-    background-color: #000;
-    color: #fff;
-    opacity: .5;
-    
-}
-
-#february{
-    border:1px solid black;
-    grid-area: feb;
-    border:1px solid black;
-    background-color: #000;
-    color: #fff;
-    opacity: .5;
-    
-}
-
-#march{
-    border: 1px solid black;
-    grid-area: mar;
-    border:1px solid black;
-    background-color: #000;
-    color: #fff;
-    opacity: .5;
-    
-}
-
-#april{
-    border: 1px solid black;
-    grid-area: apr;
-    border:1px solid black;
-    background-color: #000;
-    color: #fff;
-    opacity: .5;
-    
-}
-
-#may{
-    border: 1px solid black;
-    grid-area: may;
-    border:1px solid black;
-    background-color: #000;
-    color: #fff;
-    opacity: .5;
-    
-}
-
-#june{
-    border: 1px solid black;
-    grid-area: jun;
-    border:1px solid black;
-    background-color: #000;
-    color: #fff;
-    opacity: .5;
-    
-}
-
-#july{
-    border: 1px solid black;
-    grid-area: jul;
-    border:1px solid black;
-    background-color: #000;
-    color: #fff;
-    opacity: .5;
-    
-}
-
-#august{
-    border: 1px solid black;
-    grid-area: aug;
-    border:1px solid black;
-    background-color: #000;
-    color: #fff;
-    opacity: .5;
-    
-}
-
-#september{
-    border: 1px solid black;
-    grid-area: sep;
-    border:1px solid black;
-    background-color: #000;
-    color: #fff;
-    opacity: .5;
-    
-}
-
-#october{
-    border: 1px solid black;
-    grid-area: oct;
-    border:1px solid black;
-    background-color: #000;
-    color: #fff;
-    opacity: .5;
-    
-}
-
-#november{
-    border: 1px solid black;
-    grid-area: nov;
-    border:1px solid black;
-    background-color: #000;
-    color: #fff;
-    opacity: .5;
-    
-}
-
-#december{
-    border: 1px solid black;
-    grid-area: dec;
-    border:1px solid black;
-    background-color: #000;
-    color: #fff;
-    opacity: .5;
-    
+#calendarTitle {
+    width: 10%;
 }

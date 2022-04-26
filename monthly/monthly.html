@@ -1,46 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="monthly.css" type="text/css" />
-    <title>Monthy Planner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="monthly.css" class="href">
+    <title>Document</title>
 </head>
+
 <body>
-    <nav>
-        <lable class="logo"><img id="logo_img" src="img/clearlogo.png"></img></lable>
-        <a href="../home/home.html"><h1 class="name">Happy Tummy</a></h1>
-        <ul>
-            <li><a href="../about/about.html">About </a></li>
-            <li><a href="../monthly/monthly.html">Monthly Menu</a></li>
-            <li><a href="../partner/partner.html">Partnership</a></li>
-            <li><a href="../donation/donation.html">Donations</a></li>
-        </ul>
-    </nav>
-    <div class ="title-section">
-       <h1>Monthly Planner</h1> 
+    <div class="title">
+        <h1>Montly Planner</h1>
     </div>
-    <div class = "food-planner">
-        <div class = "left-section">
-            <h1>Don't know what to eat?</h1>
-            <br>
-            <h3> Here are some recomendations </h3>
+    <div class="calendarBody">
+        <h1 id="calendarTitle">Don't know what to eat?</h1>
+
+        <!-- FIRST CARD SECTION -->
+        <section class="calendar-body">
+            <div class="container cal-container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h5 class="card-header">January</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Spinach</h5>
+                                <img src="cal-img/spinach.jpg" class="card-img-top" alt="...">
+                                <!--<p class="card-text">All dark leafy greens are nutrient powerhouses and incredibly low in calories - roughly 10 to 20 calories per cup! Besides the high amounts of vitamins and minerals, it's also rich in beneficial plant compounds, called phytochemicals and bioactive substances that are associated with a wide range of health benefits.</p>-->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#january">
+                                    Recipe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SECOND CARD -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h5 class="card-header">February</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Blueberries</h5>
+                                <p class="card-text">Blueberries and many other dark berries are a notable source of beneficial plant-based phytochemicals that are thought to provide protective benefits. </p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#february">
+                                    Recipe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Third Card-->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h5 class="card-header">March</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Broccoli</h5>
+                                <p class="card-text">This cruciferous, non-starchy veggie contains small amounts of protein (3g per cup) and is a plant-based superfood (5). Additionally, some research suggests that diets rich in cruciferous veggies, like bok choy, broccoli, and brussels sprouts are associated with reduced cancer risks. </p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#march">
+                                    Recipe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Second Row First Card-->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h5 class="card-header">April</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Bok Choy</h5>
+                                <p class="card-text">As low calorie as lettuce, bok choy is an excellent non-starchy, cruciferous veggie to eat more of. A single cup is less than 10 calories.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#april">
+                                    Recipe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Second Row Second Card-->
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h5 class="card-header">May</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Brussels Sprouts</h5>
+                                <p class="card-text">Brussels sprouts are one of the heartiest low-calorie veggies. They taste a bit starchy than they actually are and only pack about 40 calories per cup. </p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#may">
+                                    Recipe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SECOND Row THird CARD -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h5 class="card-header">June</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Pumpkin</h5>
+                                <p class="card-text">This seasonal gourd is meant for so much more than pumpkin spaced everything. As a naturally orange veggie, it contains significant amounts of carotenoids that support good health by protecting against the development of many chronic diseases.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#june">
+                                    Recipe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--THird Row First Card-->
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h5 class="card-header">July</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Oysters</h5>
+                                <p class="card-text">While these mollusks are often looked at as a delicacy or special treat, they are actually one of the healthiest foods you can eat. Two oysters provide only 40 calories and a whole host of nutritional benefits - including 270% of your daily copper, 300% of vitamin B12 needs, and 300% of the daily value (DV) for zinc. They also contain small amounts of omega-3 fatty acids. </p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#july">
+                                    Recipe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Second Row Second Card-->
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h5 class="card-header">August</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Salmon</h5>
+                                <p class="card-text">This popular fatty fish is also a source of hard to get omega-3 fatty acids that support brain and heart health, and weight management.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#august">
+                                    Recipe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SECOND Row THird CARD -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h5 class="card-header">September</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Sardines</h5>
+                                <p class="card-text">Because you consume the whole fish (skin and bones included), sardines can also be one of the few natural sources of vitamin D in the diet. In fact, a serving of sardines can provide about 70% of the daily value (DV) for vitamin D. Like other fish and seafood, they are also a source of omega-3 fats.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#september">
+                                    Recipe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Fourth Row First Card-->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h5 class="card-header">October</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Mango</h5>
+                                <p class="card-text">Mangos are thought of as a functional food in some Asian and African cultures and the deep, rich color of this popular tropical fruit is due to its robust phytochemical profile. They are also a nutritional powerhouse.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#october">
+                                    Recipe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h5 class="card-header">November</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Asparagus</h5>
+                                <p class="card-text">Asparagus is a non starchy veggie that contains very few calories - only 17 calories per 4 spears. Plus, it is a source of inulin, a natural prebiotic that feeds healthy bacteria in your gut. Spinach, blueberries, chia seeds, and oatmeal are also prebiotic foods. </p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#november">
+                                    Recipe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h5 class="card-header">December</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Bell Peppers</h5>
+                                <p class="card-text">Bell peppers are also very low calorie. The more ripe, colorful red and orange peppers also contain beneficial plant based compounds (phytonutrients) like carotenoids.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#december">
+                                    Recipe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- MODAL FOR THE FIRST CARD -->
+    <div class="modal fade" id="january" tabindex="-1" aria-labelledby="januaryDish" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="januaryDish">Spinach</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="card-text">All dark leafy greens are nutrient powerhouses and incredibly low in calories - roughly 10 to 20 calories per cup! Besides the high amounts of vitamins and minerals, it's also rich in beneficial plant compounds, called phytochemicals and bioactive substances that are associated with a wide range of health benefits.</p>
+                    <P>It’s a good source of (10% or more):</P>
+                    <ul>
+                        <li>Fiber</li>
+                        <li>Vitamin C</li>
+                        <li>Iron</li>
+                    </ul>
+                    <p>And an excellent source of (20% or more):</p>
+                    <ul>
+                        <li>Manganese</li>
+                        <li>Magnesium</li>
+                        <li>Folate</li>
+                        <li>Vitamin A</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-        <div class = "calender">
-            <div id = "january"></div>
-            <div id = "february"></div>
-            <div id = "march"></div>
-            <div id = "april"></div>
-            <div id = "may"></div>
-            <div id = "june"></div>
-            <div id = "july"></div>
-            <div id = "august"></div>
-            <div id = "september"></div>
-            <div id = "october"></div>
-            <div id = "november"></div>
-            <div id = "december"></div>
+    </div>
+
+    <!-- MODAL FOR THE SECOND CARD -->
+    <div class="modal fade" id="february" tabindex="-1" aria-labelledby="februaryDish" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="februaryDish">Blueberries</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="card-text">Blueberries and many other dark berries are a notable source of beneficial plant-based phytochemicals that are thought to provide protective benefits.</p>
+                    <P>It’s a good source of (10% or more):</P>
+                    <ul>
+                        <li>Fiber</li>
+                    </ul>
+                    <p>And an excellent source of (20% or more):</p>
+                    <ul>
+                        <li>Vitamin C</li>
+                        <li>Vitamin K</li>
+                        <li>Manganese</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-    
+    </div>
+    <!--Third modal-->
+    <div class="modal fade" id="march" tabindex="-1" aria-labelledby="marchDish" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="marchDish">Broccoli</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="card-text">This cruciferous, non-starchy veggie contains small amounts of protein (3g per cup) and is a plant-based superfood. Additionally, some research suggests that diets rich in cruciferous veggies, like bok choy, broccoli, and brussels sprouts are associated with reduced cancer risks.</P>
+                    <p>It’s also a good source of (10% or more):</p>
+                    <ul>
+                        <li>Fiber</li>
+                        <li>Folate</li>
+                        <li>Vitamin A</li>
+                    </ul>
+                    <p>And an excellent source of (20% or more):</p>
+                    <ul>
+                        <li>Vitamin C</li>
+                        <li>Vitamin K</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
+
 </html>
