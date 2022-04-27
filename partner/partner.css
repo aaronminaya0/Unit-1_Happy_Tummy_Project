@@ -163,7 +163,7 @@ a:hover {
     .container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(10, 1fr);
+        grid-template-rows: repeat(9, 1fr);
         grid-template-areas:
         "a"
         "b"
@@ -180,6 +180,10 @@ a:hover {
     .container section {
         margin-left: 15px;
         margin-right: 15px
+    }
+    
+    .footerLI {
+        display: none;
     }
 
 }
