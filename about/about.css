@@ -247,7 +247,7 @@ a {
 
 .about-1 p{
     width:80%;
-    font-weight: bold;
+    /*font-weight: bold;*/
     padding: 3px;
 }
 
