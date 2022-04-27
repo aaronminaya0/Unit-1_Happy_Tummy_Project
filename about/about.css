@@ -1,59 +1,231 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-    list-style: none;
+/**{*/
+/*    margin: 0px;*/
+/*    padding: 0px;*/
+/*    text-decoration: none;*/
+/*    list-style: none;*/
+/*}*/
+body{
+    background-color: whitesmoke !important;
+    margin: 0;
+  font-family: Helvetica, sans-serif;
+  height: auto;
+overflow-x:hidden;
 }
 
+a {
+  color: #000;
+}
 
-nav{
-    height: 100px;
-    width: 100%;
-    background-color: white;
-    border: 5px solid black;
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+
 }
-lable.logo{
-    font-size: 20px;
-    /*line-height: 80px;*/
-    /*padding: 0 100px;*/
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
 }
-nav ul{
-    float: right;
-    margin-right: 40px;
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
 }
-nav li{
-    display: inline-block;
-    margin: 0 15px;
-    text-transform: capitalize;
-    margin-top: 30px;
-}
-nav a{
-    color: black;
-    border: solid transparent;
-    padding: 5px;
-}
-.active,a:hover{
-    border: 1px solid white;
-    transition: .5s;
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
 }
 
 #logo_img{
-    width:100px;
-    height: auto;
-}
-
-.name{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top:0;
-    padding-left: 120px;
+    display: flex;
+    float: left;
+    width: 70px;
+    height: 70px;
     
 }
+
+/*start of animated logo*/
+.animate-charcter{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  /*background-size: auto auto;*/
+  /*background-clip: border-box;*/
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  /*display: inline-block;*/
+      /*font-size: 20px;*/
+      line-height: 60px;
+  /*display: block;*/
+  /*float: left;*/
+  font-size: 18px;
+  /*padding: 10px 20px 0px 20px;*/
+  text-decoration: none;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+/*end of animated logo*/
+
+.header .logo {
+    line-height: 40px;
+  display: block;
+  float: left;
+  font-size: 18px;
+  padding: 10px 20px 0px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+/*nav{*/
+/*    height: 100px;*/
+/*    width: 100%;*/
+/*    background-color: white;*/
+/*    border: 5px solid black;*/
+/*}*/
+/*lable.logo{*/
+/*    font-size: 20px;*/
+    /*line-height: 80px;*/
+    /*padding: 0 100px;*/
+/*}*/
+/*nav ul{*/
+/*    float: right;*/
+/*    margin-right: 40px;*/
+/*}*/
+/*nav li{*/
+/*    display: inline-block;*/
+/*    margin: 0 15px;*/
+/*    text-transform: capitalize;*/
+/*    margin-top: 30px;*/
+/*}*/
+/*nav a{*/
+/*    color: black;*/
+/*    border: solid transparent;*/
+/*    padding: 5px;*/
+/*}*/
+/*.active,a:hover{*/
+/*    border: 1px solid white;*/
+/*    transition: .5s;*/
+/*}*/
+
+/*#logo_img{*/
+/*    width:100px;*/
+/*    height: auto;*/
+/*}*/
+
+/*.name{*/
+/*    position: absolute;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    top:0;*/
+/*    padding-left: 120px;*/
+    
+/*}*/
 
 .first-container{
     background-color: #62b4da;
     color: white;
+}
+.top-section{
+    padding-top:70px;
 }
 
 .top-section img{
@@ -69,13 +241,18 @@ nav a{
 }
 
 .about-1{
-    margin: 30px;
+    margin: 50px;
     padding: 5px;
 }
 
 .about-1 p{
-    text-align: center;
+    width:80%;
+    font-weight: bold;
     padding: 3px;
+}
+
+#about{
+    padding-left: 200px;
 }
 
 .about-item{
@@ -95,6 +272,7 @@ nav a{
 .about-item h3{
     font-size: 25px;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .about-item hr{
@@ -108,6 +286,7 @@ nav a{
 .about-item p{
     margin-top: 20px;
     padding-bottom: 20px;
+    font-size: 18px;
 }
 
 .about-item:hover{
@@ -134,7 +313,12 @@ nav a{
 .about-item:hover hr{
     transition: all 400ms ease-in-out;
 }
-
+.section-3 {
+    text-align: center;
+}
+.section-3 h1{
+    margin-top: 80px;
+}
 .profile-section{
     padding: 80px 0;
 }
@@ -199,6 +383,18 @@ nav a{
     color: darkcyan;
     padding: 0 10px;
 }
-body{
-    background-color: whitesmoke !important;
+.footer {
+    background-color: #FBC4AB;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.footer ul {
+    display: flex;
+}
+
+.footer ul li {
+    padding: 15px;
 }

@@ -2,6 +2,171 @@ body {
     background-image: url("calendar-backround.jpg");
     
 }
+
+/*start of ashes navbar*/
+a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+#logo_img{
+    display: flex;
+    float: left;
+    width: 70px;
+    height: 70px;
+    
+}
+
+/*start of animated logo*/
+.animate-charcter{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  /*background-size: auto auto;*/
+  /*background-clip: border-box;*/
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  /*display: inline-block;*/
+      /*font-size: 20px;*/
+      line-height: 60px;
+  /*display: block;*/
+  /*float: left;*/
+  font-size: 18px;
+  /*padding: 10px 20px 0px 20px;*/
+  text-decoration: none;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+/*end of animated logo*/
+
+.header .logo {
+    line-height: 40px;
+  display: block;
+  float: left;
+  font-size: 18px;
+  padding: 10px 20px 0px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/*end of ashes nav bar*/
 .card:hover {
     box-shadow: 12px 12px 2px 1px rgba(21, 97, 239, 0.86);
 }
@@ -22,20 +187,58 @@ body {
     margin: 0 auto;
     width: 18rem;
     margin-bottom: 2rem;
-    background-color: #000;
-     color: #fff;
+    background-color: black !important;
+     color: black;
     opacity: .9;
+}
+.card h5 {
+    color: white;
+}
+
+.card-header{
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .calendarBody {
     display: flex;
     width: 90%;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 .title{
     text-align: center;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    padding-top: 20px;
+}
+.title h1{
+    padding-top: 70px;
+ 
+}
+
+
+#calendarTitle {
+    padding-top: 100px;
+    width: 10%;
+    font-size: 70px;
 }
 
 #calendarTitle {
-    width: 10%;
+    
+}
+.footer {
+    background-color: #FBC4AB;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.footer ul {
+    display: flex;
+}
+
+.footer ul li {
+    padding: 15px;
 }
