@@ -210,5 +210,9 @@ a:hover {
         margin-left: 15px;
         margin-right: 15px
     }
+    
+    .footerLI {
+        display: none;
+    }
 
 }
